@@ -76,7 +76,7 @@
 	        <th>Appointment Type</th>
 	        <th>Patient Full Name</th>
 	        <th>Fees Charge</th>
-	        <th>is the Amount Paid?</th>
+	        <th>Amount Paid</th>
 	        <th>Appointment Details</th>
 	        <th>With Doctor MD</th>
 	        <th>Location:</th>
@@ -90,7 +90,7 @@
 	      <tr>
 			<td>{{$appointments->title}}</td>
 			<td>{{$appointments->name}}</td>
-			<td>{{$appointments->amount}}</td>
+			<td>${{$appointments->fee}}</td>
 			<td>${{$appointments->fee}}</td>
 			<td>{{$appointments->details}}</td>
 			<td>{{$appointments->doctor}}</td>
