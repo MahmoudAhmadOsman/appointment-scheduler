@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+}
+
+
+body{
+	background-color: #fdfdfd;
+}
+
+.go-back{
+	
+	margin-top: 5px;
+}
+
+.profile__panel{
+    background-color: #f3f3f3
+}
