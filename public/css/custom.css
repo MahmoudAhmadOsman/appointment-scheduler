@@ -21,4 +21,17 @@ body{
 
 .profile__panel{
     background-color: #f3f3f3
+
 }
+/*Start of Insurance section*/
+.top_details{
+        background-color:#f7fff857;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 60px;
+}
+
+.edit-insurance-btn{
+    margin-top: -40px;
+}
+
+/*End of Insurance section*/

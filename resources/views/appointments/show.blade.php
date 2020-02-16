@@ -3,8 +3,12 @@
 @section('content')
 
 <section  id="show_schedule" class="container" style="background-color: #fff; font-size: 20px;">
-<a href="/appointments" class="fa fa-chevron-left btn btn-outline-info btn-sm go-back"> Go Back</a><hr>
-	<h3>{{$appointments->name}} Account Details </h3><hr>
+<div class="top_details">
+		<a href="/appointments" class="fa fa-chevron-left btn btn-outline-info btn-sm go-back"> Go Back</a><hr>
+		<h3><span class="text-success">{{$appointments->name}}</span> Account Details </h3>
+
+		<a href="#" class="btn btn-outline-primary btn-sm float-right edit-insurance-btn">Edit Insurance</a>
+</div>
 <div class="row">
 <div class="col-md-2" style="font-size: 12px">
 			<!-- Start of bs4 card	-->
@@ -113,12 +117,20 @@
 	      <tr>
 	        <th>Insurance Name</th>
 	        <th>Coverage Type</th>  
+	        <th>Insurance Number</th> 
+	        <th>Insurance Issuer</th> 
+	        <th>Insurance Phone #</th>   
 	      </tr>
 	    </thead>
 
 	    <tr>
 	    	<td>{{$appointments->appMaker}}</td>
 	    	<td>{{$appointments->name}}</td>
+	    	
+	    	<td>154-687-6998</td>
+	    	<td>BlueCare BlueShare</td>
+	    	<td>1800-987-68749</td>
+	   
 	    </tr>
 	  </table>
 	  <hr>
@@ -138,6 +150,14 @@
 	    	<td>{{$appointments->appMaker}}</td>
 	    	<td>{{$appointments->created_at->format('m-d-Y')}}</td>
 	    </tr>
+
+	     
+
+
+	     
+
+
+
 	  </table>
 
 
