@@ -21,7 +21,7 @@ Heroku Link:  [mlaravel.herokuapp](http://mlaravel.herokuapp.com/)
 
 
 
-## Contributing
+## Contributing?
 Please, feel free to contrubute to this and correct me if you see anything wrong about this project or if you have any sugguestions that would also welcomed. 
 
 
