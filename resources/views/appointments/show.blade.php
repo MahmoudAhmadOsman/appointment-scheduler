@@ -5,9 +5,9 @@
 <section  id="show_schedule" class="container" style="background-color: #fff; font-size: 20px;">
 <div class="top_details">
 		<a href="/appointments" class="fa fa-chevron-left btn btn-outline-info btn-sm go-back"> Go Back</a><hr>
-		<h3><span class="text-success">{{$appointments->name}}</span> Account Details </h3>
+		<h3>Account Details of <i class="text-success"> {{$appointments->name}}</i> </h3>
 
-		<a href="#" class="btn btn-outline-primary btn-sm float-right edit-insurance-btn">Edit Insurance</a>
+		<a href="#" class="btn btn-outline-primary btn-sm float-right edit-insurance-btn" onclick="return confirm('Insurance details not ready yet!');">Edit Insurance</a>
 </div>
 <div class="row">
 <div class="col-md-2" style="font-size: 12px">
@@ -16,7 +16,7 @@
 			<div class="card" >
 			  <img src="https://us.v-cdn.net/6022045/uploads/defaultavatar.png" alt="Patient image" style="width: 150px; height: 150px; margin: auto;" title="{{$appointments->name}}">
 			  <div class="card-body">
-			    <b class="card-title">Full Name:</b> {{$appointments->name}}
+			    <b class="card-title">Patient Name:</b> {{$appointments->name}}
 			    <p class="card-text">
 			    	<b>Phone: </b> 802-354-4555
 			    </p>
@@ -78,11 +78,11 @@
 	    <thead>
 	      <tr>
 	        <th>Appointment Type</th>
-	        <th>Patient Full Name</th>
+	        <th>Patient Name</th>
 	        <th>Fees Charge</th>
 	        <th>Amount Paid</th>
 	        <th>Appointment Details</th>
-	        <th>With Doctor MD</th>
+	        <th>MD Name</th>
 	        <th>Location:</th>
 	        <th>Created Date:</th>
 	        <th>Modified Date:</th>

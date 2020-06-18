@@ -6,31 +6,27 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
-
 }
 
-
-body{
-	background-color: #fdfdfd;
+body {
+    background-color: #ababab;
 }
 
-.go-back{
-	
-	margin-top: 5px;
+.go-back {
+    margin-top: 5px;
 }
 
-.profile__panel{
-    background-color: #f3f3f3
-
+.profile__panel {
+    background-color: #f3f3f3;
 }
 /*Start of Insurance section*/
-.top_details{
-        background-color:#f7fff857;
-        border-bottom: 2px solid #ccc;
-        margin-bottom: 60px;
+.top_details {
+    background-color: #f7fff857;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 60px;
 }
 
-.edit-insurance-btn{
+.edit-insurance-btn {
     margin-top: -40px;
 }
 
