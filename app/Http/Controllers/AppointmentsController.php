@@ -15,6 +15,14 @@ class AppointmentsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+public function __construct()
+{
+    //this will lock the destroy or delete functionality in appointment controller
+  $this->middleware('auth', ['only' => [ 'destroy']]);
+}
+
+
     public function index()
     {
     
@@ -77,7 +85,7 @@ $appointments = new Appointment;
         $appointments->save();
 
     //return redirect('/appointments');
-    return redirect('/appointments')->with('success', 'New record has been created!');
+    return redirect('/appointments')->with('success', 'Created new record!');
 
 
 
@@ -148,7 +156,7 @@ $appointments = new Appointment;
         $appointments->save();
 
 
-    return redirect('/appointments/' . $appointments->id)->with('success', 'The record has been Updated!');
+    return redirect('/appointments/' . $appointments->id)->with('success', 'Record is updated!');
 
 
     }
@@ -163,7 +171,7 @@ $appointments = new Appointment;
     {
         $appointments = Appointment::find($id);
         $appointments->delete();
-        return redirect('/appointments')->with('danger', 'A record had been removed');
+        return redirect('/appointments')->with('danger', 'Record is removed!');
         
 
     }

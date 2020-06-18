@@ -5,9 +5,6 @@
 @section('content')
 
 
- 
-
-
 <section class="container" style="background-color: #fff;">
 
      <div class="row">

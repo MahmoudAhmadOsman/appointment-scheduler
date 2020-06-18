@@ -45,7 +45,7 @@
 <div class="col-md-4">
   <h4>GL Appointment Managment</h4>
   <div class="card" >
-  <img class="card-img-top" src="https://leankit.com//uploads/images/general/_ogShare/Top-6-Software-Development-Methodologies.jpg" alt="GL Appointment Managment"  style="height: 232px;">
+  <img class="card-img-top" src="https://static.timesofisrael.com/blogs/uploads/2019/10/bhanu.jpg" alt="GL Appointment Managment"  style="height: 232px;">
   <div class="card-body">
     <h4 class="card-title">GL Appointment Managment </h4>
     <p class="card-text"></p>

@@ -47,18 +47,19 @@
 		{{csrf_field()}}
         <input name="_method" type="hidden" value="DELETE">
          
-    
+    			{{-- can('view', $appointments) --}}
+
 		<button type="submit" class="btn btn-outline-danger btn-sm btn-block" onclick="return confirm('Are you sure, you want to delete this record?');">Erraise/Delete</button>
-
+			{{-- endcan --}}
 	
-		<!-- endcan -->
-			
-	</form>
-			    </li>
 
-			  </ul>
-			  
-</div>
+			
+		</form>
+		</li>
+
+		</ul>
+
+		</div>
 
 
 
