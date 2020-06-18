@@ -30,7 +30,7 @@
 					<b>Address:</b> 12 Main St. Coon Rapids, MN 55344
 			    </li>
 			    <li class="list-group-item">
-					<b>Pharmacy:</b> Walgreen
+					<b>Primary Pharmacy:</b> Walgreen
 			    </li>
 			    <li class="list-group-item">
 					<b>Medicine List:</b> Pha, Hye, Mnde
@@ -118,18 +118,25 @@
 	      <tr>
 	        <th>Insurance Name</th>
 	        <th>Coverage Type</th>  
-	        <th>Insurance Number</th> 
-	        <th>Insurance Issuer</th> 
-	        <th>Insurance Phone #</th>   
+	        <th>Insurance Card Number</th> 
+	        {{-- <th>Insurance Issuer</th>  --}}
+	        <th>Insurance Phone Number</th>   
 	      </tr>
 	    </thead>
 
 	    <tr>
-	    	<td>{{$appointments->appMaker}}</td>
+	    	<td>
+			<select name="insurance" id="insurance">
+			<option value="insurance_a">Insurance A</option>
+			<option value="insurance_b">Insurance B</option>
+			<option value="insurance_c">Insurance C</option>
+			<option value="insurance_d">Insurance  D</option>
+  			</select>
+			</td>
 	    	<td>{{$appointments->name}}</td>
 	    	
-	    	<td>154-687-6998</td>
-	    	<td>BlueCare BlueShare</td>
+	    	<td>154-687-6998-458764</td>
+	    	
 	    	<td>1800-987-68749</td>
 	   
 	    </tr>
