@@ -21,9 +21,5 @@ Route::get('/', function () {
 
 
 Route::resource('appointments', 'AppointmentsController');
-
-
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');

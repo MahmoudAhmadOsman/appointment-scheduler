@@ -1,15 +1,8 @@
 @extends('layouts.app')
-
 @section('title', ' | . {{$appointment->title}}')
-
 @section('content')
-
-
 <h1 class="text-danger text-center">Appointment Center</h1>
-
-
 <section class="container" style="background-color: #fff">
-
   <div class="row">
     <div class="col-md-2 profile__panel">
       <div class="patient__profile">
@@ -21,12 +14,12 @@
       </div>
     </div>
     <div class="col-md-10">
-
       <p class="lead text-primary"><b>List</b> of all patients who have an appointment today.</p>
-      <p class="mb-3"><b>Today's Date is: </b> <?php echo date("m/d/Y") ?> </p>
+      <p class="mb-3"><b>Today's Date is: </b>
+        <?php echo date("m/d/Y") ?>
+      </p>
       @if(count($appointments) > 0)
       @foreach($appointments as $appointment)
-
       <div class="table-responsive">
         <table class="table table-bordered table-hover" style="font-size: 12px">
           <thead>
@@ -57,22 +50,18 @@
               <td>{{$appointment->details}}</td>
               <td>
                 <i class="fa fa-clock-o" aria-hidden="true"></i>
-
                 {{$appointment->appTime}}
               </td>
               <td>
-
                 {{$appointment->location}}
               </td>
               <td>{{$appointment->doctor}}</td>
               <td>{{$appointment->appMaker}}</td>
               <td style="text-transform: uppercase;">{{$appointment->amount}}
-                {{-- <i class="fa fa-check" aria-hidden="true"></i>  --}}
+                {{-- <i class="fa fa-check" aria-hidden="true"></i> --}}
               </td>
-
               <td>{{$appointment->created_at->format('m-d-Y')}}</td>
             </tr>
-
           </tbody>
         </table>
       </div>
@@ -88,16 +77,9 @@
       </div>
       @endif
     </div>
-
-
   </div>
 </section>
-
-
 <!-- ==================================
 End of the last design section
 =================================== -->
-
-
-
 @endsection

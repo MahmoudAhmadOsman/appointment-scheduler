@@ -23,14 +23,10 @@ public function __construct()
 }
 
 
-    public function index()
-    {
-    
+    public function index(){
 
     //$appointments = Appointment::all();
     $appointments = Appointment::orderBy('created_at','desc')->paginate(8);
-
-   
     return view('appointments.index')->with('appointments', $appointments);
 
     }
@@ -40,10 +36,7 @@ public function __construct()
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        
-
+    public function create(){
         return view('appointments.create');
 
     }
@@ -54,6 +47,8 @@ public function __construct()
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+     //Validate form fields
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -80,11 +75,9 @@ $appointments = new Appointment;
         $appointments->doctor      = $request->input('doctor');
         $appointments->appMaker    = $request->input('appMaker');
         $appointments->amount      = $request->input('amount');
-        
-        
         $appointments->save();
 
-    //return redirect('/appointments');
+    //return redirect with success message
     return redirect('/appointments')->with('success', 'Created new record!');
 
 
