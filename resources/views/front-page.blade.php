@@ -16,16 +16,15 @@
       </div>
     </div>
     <div class="col-md-4">
-      <h4>NetsanSoftware</h4>
+      <h4>Mahmoud Osman</h4>
       <div class="card">
         <img class="card-img-top"
           src="https://chiefexecutive.net/wp-content/uploads/2018/11/AdobeStock_92323963-compressor-1024x662.jpeg"
           alt="GL Appointment Managment" style="height: 232px;">
         <div class="card-body">
-          <h4 class="card-title">NetsanSoftware </h4>
+          <h4 class="card-title">Mahmoud Osman </h4>
           <p class="card-text"></p>
-          <a href="www.netsansoftware.com" target="_blank" class="btn btn-outline-success btn-sm btn-block">Visit Netsan
-            Software</a>
+          <a href="www.mahmoudosman.com" target="_blank" class="btn btn-outline-success btn-sm btn-block">Visit Mahmoud Osman</a>
         </div>
       </div>
     </div>
