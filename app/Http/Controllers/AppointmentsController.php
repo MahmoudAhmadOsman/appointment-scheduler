@@ -52,7 +52,6 @@ public function __construct()
     public function store(Request $request)
     {
         $this->validate($request, [
-        
         'name'            => 'required|min:3',
         'title'           => 'required',
         'fee'             => 'required',
@@ -61,8 +60,7 @@ public function __construct()
         'location'        => 'required',
         'doctor'          => 'required',
         'appMaker'        => 'required',
-        'amount'          => 'required',
-        
+        'amount'          => 'required',    
 ]);
 
 $appointments = new Appointment;
@@ -77,11 +75,8 @@ $appointments = new Appointment;
         $appointments->amount      = $request->input('amount');
         $appointments->save();
 
-    //return redirect with success message
+   //return redirect with success message
     return redirect('/appointments')->with('success', 'Created new record!');
-
-
-
     }
 
     /**
@@ -160,6 +155,8 @@ $appointments = new Appointment;
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
+    /*Delete method */
     public function destroy($id)
     {
         $appointments = Appointment::find($id);
