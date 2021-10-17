@@ -55,7 +55,7 @@
 		<div class="col-md-10">
 			<div class="table-responsive">
 				<table class="table table-bordered" style="font-size: 11px">
-					<h4 class="text-danger">Appointment Details about <i class="text-success">{{$appointments->name}}</i>
+					<h4 class="text-danger">Appointment Details for: <i class="text-success">{{$appointments->name}}</i>
 					</h4>
 					<thead>
 						<tr>
