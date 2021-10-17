@@ -28,7 +28,7 @@
               <th>Appointment Type</th>
               <th>Patient Name</th>
               <th>Fees</th>
-              <th><a href="/appointments/{{$appointment->id}}">See All Details</a></th>
+              <th><a href="/appointments/{{$appointment->id}}">See Full Details</a></th>
               <th>
                 Appointment Time
               </th>
