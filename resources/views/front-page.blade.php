@@ -24,7 +24,7 @@
         <div class="card-body">
           <h4 class="card-title">Mahmoud Osman </h4>
           <p class="card-text"></p>
-          <a href="www.mahmoudosman.com" target="_blank" class="btn btn-outline-success btn-sm btn-block">Visit Mahmoud Osman</a>
+          <a href="https://www.mahmoudosman.com/m" target="_blank" class="btn btn-outline-success btn-sm btn-block">Visit Mahmoud Osman</a>
         </div>
       </div>
     </div>
