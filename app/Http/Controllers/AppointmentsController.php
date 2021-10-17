@@ -161,7 +161,7 @@ $appointments = new Appointment;
     {
         $appointments = Appointment::find($id);
         $appointments->delete();
-        return redirect('/appointments')->with('danger', 'Record is removed!');
+        return redirect('/appointments')->with('danger', 'Record has been removed successfully!');
         
 
     }
